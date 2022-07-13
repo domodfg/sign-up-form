@@ -55,15 +55,13 @@ body {
 }
 
 .top, .bottom {
-    height:34vh;
     background-color: #f9faf8;
     flex-direction: column;
-    font-size: 1.4rem;
-    font-weight: 500;
 }
 
 .top {
     justify-content: end;
+    height:34vh;
 }
 
 .bottom {
@@ -71,12 +69,28 @@ body {
 }
 
 .description {
-    padding: 10px 200px 40px 40px;
+    padding: 10px 200px 40px 37px;
     margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.description2 {
+    padding: 10px 200px 40px 37px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: 500;
 }
 
 .middle {
     height: 40vh;
+    box-shadow: 10px 1px 5px black;
 }
 
 form {
@@ -88,10 +102,11 @@ form {
 
 fieldset {
     display: flex;
-    height: 35vh;
+    height: 33vh;
     flex-wrap: wrap;
     gap:  0px 80px;
     border: none;
+    
 }
 
 input, label {
@@ -107,6 +122,14 @@ input, label {
 input{
     border: 1px #E5E7EB solid;
     padding-left: 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px turquoise solid;
+    box-shadow: 0.5px 0.5px 0.5px black;
+    border-radius: 5px;
 }
 
 .input-container {
@@ -116,4 +139,14 @@ input{
 legend {
     font-size: 2rem;
     padding-bottom: 20px;
+}
+
+button {
+    width: 14vw;
+    margin: 30px 40px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #efec8d;
 }
