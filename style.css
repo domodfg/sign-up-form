@@ -14,7 +14,8 @@ body {
 .brand, 
 .right, 
 .top, 
-.bottom {
+.bottom,
+.input-container {
   display: flex;
   font-family: 'Roboto', sans-serif;
 }
@@ -50,10 +51,11 @@ body {
 .right {
   width: 65vw;
    flex-direction: column;
+   justify-content: center;
 }
 
 .top, .bottom {
-    height: 34vh;
+    height:34vh;
     background-color: #f9faf8;
     flex-direction: column;
     font-size: 1.4rem;
@@ -64,11 +66,54 @@ body {
     justify-content: end;
 }
 
+.bottom {
+    height: 26vh;
+}
+
 .description {
     padding: 10px 200px 40px 40px;
     margin: 0;
 }
 
 .middle {
-    height: 32vh;
+    height: 40vh;
+}
+
+form {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 1em;
+    appearance: none;
+}
+
+fieldset {
+    display: flex;
+    height: 35vh;
+    flex-wrap: wrap;
+    gap:  0px 80px;
+    border: none;
+}
+
+input, label {
+    width: 20vw;
+    height: 25px;
+    padding :0;
+    margin  :0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #1f2937;
+}
+
+input{
+    border: 1px #E5E7EB solid;
+    padding-left: 10px;
+}
+
+.input-container {
+    flex-direction: column;
+}
+
+legend {
+    font-size: 2rem;
+    padding-bottom: 20px;
 }
