@@ -11,8 +11,12 @@ body {
 .container,
 .left-panel,
 .icon-container,
-.brand {
+.brand, 
+.right, 
+.top, 
+.bottom {
   display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
 .icon-container {
@@ -23,7 +27,7 @@ body {
 }
 
 .icon {
-  width: 10vw;
+    width: min(10vw, 150px);
 }
 
 .brand {
@@ -38,11 +42,33 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 35vw;
   background-image: url(Go.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .right {
   width: 65vw;
+   flex-direction: column;
+}
+
+.top, .bottom {
+    height: 34vh;
+    background-color: #f9faf8;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.top {
+    justify-content: end;
+}
+
+.description {
+    padding: 10px 200px 40px 40px;
+    margin: 0;
+}
+
+.middle {
+    height: 32vh;
 }
